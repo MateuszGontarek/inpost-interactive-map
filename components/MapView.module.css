@@ -1,0 +1,33 @@
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.mapWrap {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.mapLoading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #f7f6f2;
+}
+
+.spinner {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #ffcb00;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

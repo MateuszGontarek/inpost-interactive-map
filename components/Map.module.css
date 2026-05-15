@@ -1,0 +1,104 @@
+.popup {
+  padding: 14px 16px;
+  font-family: "DM Sans", system-ui, sans-serif;
+  min-width: 220px;
+}
+
+.popupHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.popupName {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+  letter-spacing: -0.2px;
+}
+
+.popupAddr {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.popupDesc {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.popupMeta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.pill247 {
+  font-size: 10px;
+  font-weight: 600;
+  background: #ffcb00;
+  color: #1a1a1a;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.pillEasy {
+  font-size: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 2px 7px;
+  border-radius: 999px;
+  border: 1px solid #bfdbfe;
+}
+
+.pillStatus {
+  font-size: 10px;
+  background: #f0fdf4;
+  color: #16a34a;
+  padding: 2px 7px;
+  border-radius: 999px;
+  border: 1px solid #bbf7d0;
+}
+
+.popupSizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.sizeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 4px;
+  border-radius: 8px;
+  background: #f7f6f2;
+  border: 1px solid #e5e5e5;
+  font-size: 12px;
+  gap: 2px;
+}
+
+.sizeBox span:first-child {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.sizeStatus {
+  font-size: 11px;
+  color: #6b6b6b;
+}
+
+.sizeBox[data-status="AVAILABLE"] {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.sizeBox[data-status="AVAILABLE"] .sizeStatus {
+  color: #16a34a;
+}

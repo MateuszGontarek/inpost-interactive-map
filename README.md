@@ -7,7 +7,6 @@ Interaktywna mapa paczkomatów InPost w Polsce zbudowana w Next.js 14 (App Route
 - **Next.js 14** – App Router, Server Components, Route Handlers
 - **React Leaflet** – interaktywna mapa
 - **TypeScript** – typowanie
-- **CSS Modules** – stylowanie bez zewnętrznych bibliotek
 
 ## Architektura
 

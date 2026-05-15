@@ -34,12 +34,10 @@ export async function fetchPoints(
 }
 
 export async function fetchAllPoints(city?: string): Promise<PointsResponse> {
-  // First page to know total
   const first = await fetchPoints({ city, perPage: 100, page: 1 });
 
   if (first.total_pages <= 1) return first;
 
-  // Fetch remaining pages in parallel (cap at 5 pages = 500 points for MVP)
   const maxPages = Math.min(first.total_pages, 5);
   const pageNums = Array.from({ length: maxPages - 1 }, (_, i) => i + 2);
 
